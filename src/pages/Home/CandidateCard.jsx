@@ -12,6 +12,13 @@ const CardWrapper = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+
+  @media (max-width: 768px) {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -20,6 +27,10 @@ const ImageWrapper = styled.div`
   background-size: cover;
   background-position: top;
   border-radius: 8px;
+  @media (max-width: 768px) {
+    width: 300px; // Retorna ao tamanho original em telas maiores
+    height: 300px;
+  }
 `;
 
 const NameWrapper = styled.h3`
